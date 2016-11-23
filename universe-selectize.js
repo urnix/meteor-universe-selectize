@@ -407,17 +407,17 @@ Template.universeSelectize.onCreated(function () {
 Template.universeSelectize.onRendered(function () {
     var template = this;
 
-    template.autorun(function () {
-        var data = Template.currentData();
-        var value = data.value;
-
-        if (template.uniSelectize.optionsMethod) {
-            template.uniSelectize.getOptionsFromMethod(value);
-        } else {
-            var options = data.options;
-            template.uniSelectize.setItems(options, value);
-        }
-    });
+    // template.autorun(function () {
+    //     var data = Template.currentData();
+    //     var value = data.value;
+    //
+    //     if (template.uniSelectize.optionsMethod) {
+    //         template.uniSelectize.getOptionsFromMethod(value);
+    //     } else {
+    //         var options = data.options;
+    //         template.uniSelectize.setItems(options, value);
+    //     }
+    // });
 
     template.autorun(function () {
         template.uniSelectize.itemsAutorun();
